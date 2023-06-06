@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+
+  .Principal{
+    width: 80%;
+    margin: auto;
+    
+  }
+
+  .div-profile {
+    display: flex;
+    padding-bottom: 20px;
+  }
+
+  .titles{
+    font-size: 2.5rem;
+    margin-left: 1%;
+  }
+
+  .title_profile, title{
+    font-family: monospace;
+    color: #221f20;
+    font-size: 20px;
+  }
+
+  .profile-img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-left: 20%;
+  }
+
+  .img-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 1px;
+  }
+
+  .skill i {
+    margin-right: 5px;
+  }
+
+  h1 {
+    color: #333;
+    margin-top: 0;
+  }
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  
+
+  .section:last-child {
+    margin-bottom: 0;
+  }
+
+  .title {
+    color: #007bff;
+  }
+
+  .subtitle {
+    color: #dc3545;
+  }
+
+  .info {
+    margin: 5px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  .personal-info {
+    font-size: 13px;
+    background-color: rgba(227, 31, 24, 0.147);
+    width: 45%;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 10px;
+  }
+
+  .skill {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+
+  .acreca-mi{
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .experience,
+  .education,
+  .project {
+    margin-bottom: 10px;
+  }
+
+  .experience h3,
+  .education h3,
+  .project h3 {
+    color: #007bff;
+    margin-bottom: 5px;
+  }
+
+  .experience p,
+  .education p,
+  .project p {
+    margin: 0;
+    text-align: justify;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+
+ 
+
+  .personal-info {
+    text-align: justify;
+  }
+
+ 
+
+  .separator {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+
+  .icon {
+    margin-right: 5px;
+  }
+
+  .contact-info {
+    margin-top: 10px;
+  }
+
+  .contact-info a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+  }
