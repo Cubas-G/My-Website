@@ -4,9 +4,18 @@
     <title>Currículum Vitae</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="path/to/font-awesome.min.css" />
     <link rel="stylesheet" href="./Estilos/tarea1.css" />
+
+    <!-- Importacion de iconos de de Habilidades -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-...tu-código-de-integridad..."
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="div-profile">
@@ -18,36 +27,19 @@
     </div>
 
     <section class="Principal">
-
       <div class="personal-info">
-
-        <i class="icon"></i> <img class="img-icon" src="./Icons/G-mail.png" alt>
-        <a
-          href="https://mail.google.com/mail/u/0/?hl=es#inbox">G-mail</a>
-
-        <i class="icon"></i> <img class="img-icon" src="./Icons/facebook.png"
-          alt> <a
-          href="https://mail.google.com/mail/u/0/?hl=es#inbox">Facebook</a>
-
-        <i class="icon"></i> <img class="img-icon" src="./Icons/instagram.png"
-          alt> <a
-          href="https://mail.google.com/mail/u/0/?hl=es#inbox">Instagram</a>
-
-        <i class="icon"></i> <img class="img-icon" src="./Icons/whatsapp.png"
-          alt> <a
-          href="https://mail.google.com/mail/u/0/?hl=es#inbox">WhatsApp</a>
-
-        <i class="icon"></i> <img class="img-icon" src="./Icons/telegram.png"
-          alt> <a
-          href="https://mail.google.com/mail/u/0/?hl=es#inbox">Telegram</a>
-
+        <a href="https://mail.google.com/mail/u/0/?hl=es#inbox"><i class="icon fab fa-google"></i></a>
+        <a href="https://www.facebook.com/"><i class="icon fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="icon fab fa-instagram"></i></a>
+        <a href="https://web.whatsapp.com/"><i class="icon fab fa-whatsapp"></i></a>
+        <a href="https://web.telegram.org/"><i class="icon fab fa-telegram"></i></a>
       </div>
-      <div class="section">
 
+
+      <div class="section">
         <div class="acerca-de">
           <h2 class="title">ACERCA DE MI</h2>
           <p class="acreca-mi">
-
             Soy un estudiante de Ingeniería en Sistemas con experiencia en
             tecnologías de programación web y diseño gráfico. Mi pasión por la
             informática y mi habilidad para resolver problemas me han permitido
@@ -58,103 +50,139 @@
             colaborando con equipos multidisciplinarios para impulsar soluciones
             innovadoras y eficientes en el campo de la tecnología.
           </p>
-
         </div>
+        <div class="separator"></div>
         <h2 class="title">Habilidades</h2>
-        <div class="info">
-          <h3 class="subtitle">Mantenimiento y Reparacion de Computadoras:</h3>
-          <p class="skill">
-            <i class="fas fa-pencil-alt"></i>Activacion de programas
-          </p>
-          <p class="skill">
-            <i class="fas fa-pencil-alt"></i> Limpieza de virus
-          </p>
-          <p class="skill">
-            <i class="fas fa-pencil-alt"></i> Cambio de componentes
-          </p>
-          <p class="skill"><i class="fas fa-pencil-alt"></i>Aactualizaciones</p>
 
-          <h3 class="subtitle">Edicion de medios Digitales:</h3>
-          <p class="skill"><i class="fas fa-pencil-alt"></i> Adobe Premiere</p>
-          <p class="skill"><i class="fas fa-film"></i> Filmora</p>
-          <p class="skill"><i class="fas fa-pencil-alt"></i> Adobe Photoshop</p>
-          <p class="skill">
-            <i class="fas fa-pencil-alt"></i> Adobe Illustrator
-          </p>
-          <p class="skill"><i class="fas fa-pencil-alt"></i> Adobe Audition</p>
-          <p class="skill"><i class="fas fa-pencil-alt"></i> Adobe xd</p>
+        <div class="Habilities">
+          <h3 class="subtitle computadoras">
+            Mantenimiento y Reparacion de Computadoras:
+          </h3>
+          <ul>
+            <li class="activacion-programas">Activacion de Programas</li>
+            <li class="limpieza-virus">Limpieza de Virus</li>
+            <li class="cambio-componentes">Cambio de Componentes</li>
+            <li class="actualizaciones">Actualizaciones</li>
+          </ul>
+        </div>
 
-          <h3 class="subtitle">Desarrollo Web:</h3>
-          <p class="skill"><i class="fab fa-html5"></i> HTML y CSS</p>
-          <p class="skill"><i class="fab fa-js"></i> JavaScript Básico</p>
-          <p class="skill"><i class="fab fa-js"></i> TypesScript Básico</p>
+        <div class="Habilities">
+          <div class="separator"></div>
+          <h3 class="Office">Manejo de paquete Offimatico:</h3>
+          <ul>
+            <li class="Documentos">Word</li>
+            <li class="Calculos">Exel</li>
+            <li class="Presentaciones">PowerPoint</li>
+          </ul>
+        </div>
 
-          <h3 class="subtitle">Aplicaciones Ofimáticas:</h3>
-          <p class="skill"><i class="fas fa-file-word"></i> Word Avanzado</p>
-          <p class="skill">
-            <i class="fas fa-file-excel"></i> Excel Intermedio
-          </p>
-          <p class="skill">
-            <i class="fas fa-file-powerpoint"></i> PowerPoint Avanzado
-          </p>
+        <div class="Habilities">
+          <div class="separator"></div>
+          <h3 class="Disain">Edición de medio Digitales:</h3>
+          <ul>
+            <li class="Edicion-de-fotografia">Adobe Photoshop</li>
+            <li class="Edicion-de-video">Adobe Premiere</li>
+            <li class="Edit-Audio">Adobe Audition</li>
+            <li class="Edicion-de-video">Filmora</li>
+            <li class="Edit-Audio">Audacity</li>
+          </ul>
+        </div>
+
+
+
+        <div class="Habilities">
+          <div class="separator"></div>
+          <h3 class="DisainWeb">Desarrollo Web:</h3>
+          <div class="horizontal">
+
+            <div class="icon">
+           
+            </div>
+            <ul>
+              <li>
+                <img src="/Icons/html-5.png" alt="HTML icon">
+                HTML
+              </li>
+              <li>
+                <img src="/Icons/css-3.png" alt="CSS icon">
+                CSS
+              </li>
+              <li>
+                <img src="/Icons/js.png" alt="JavaScript icon">
+                JavaScript
+              </li>
+              <li>
+                <img src="/Icons/Reac.png" alt="React icon">
+                React
+              </li>
+              <li>
+                <img src="/Icons/Vuejs.png" alt="ViewJs icon">
+                ViewJs
+              </li>
+            </ul>
+          </div>
+          
         </div>
       </div>
 
+
+
       <div class="section">
+        <div class="separator"></div>
         <h2 class="title">Experiencia Laboral</h2>
         <div class="experience">
-          <h3>Desarrollador Web - XYZ Company</h3>
+          <h4>
+            Practicas pre-profesionales Laboratorio de informatica Universidad
+            URACCAN
+          </h4>
           <p class="info">
-            <span class="subtitle">Fecha:</span> Enero 2022 - Actualidad
+            <span class="subtitle">Fecha:</span> 27 de marzo de 2022, 18 de
+            Noviembre de 2022
           </p>
           <p class="info">
-            <span class="subtitle">Descripción:</span> Trabajé en el desarrollo
-            y mantenimiento de sitios web utilizando HTML, CSS y JavaScript.
+            <span class="subtitle">Descripción:</span> Trabajé como asistente de
+            Soporte Técnico, mantenimiento de computadoras, hardware y software,
+            cambio de sistemas instalcion y eliminacion de programas,
+            eliminacion de virus, activacion de licencias.
           </p>
         </div>
         <!-- Puedes agregar más experiencias laborales -->
       </div>
 
       <div class="section">
+        <div class="separator"></div>
         <h2 class="title">Educación</h2>
         <div class="education">
-          <h3>Ingeniería en Sistemas</h3>
+          <h4>Estudios de Primaria</h4>
+
           <p class="info">
-            <span class="subtitle">Fecha:</span> 2018 - Presente
+            <span class="subtitle"></span> Escuela Primaria Miguel LaReynaga 2010-2015
           </p>
+
+          <h4>Estudios de Secundaria</h4>
+
           <p class="info">
-            <span class="subtitle">Descripción:</span> Cursando el cuarto año de
-            la carrera de Ingeniería en Sistemas, especializado en desarrollo de
-            software.
+            <span class="subtitle"></span> Instituto Salomón Bravo Herrera 2015-2020
           </p>
-        </div>
-        <div class="education">
-          <h3>
-            Universidad de las Regiones Autónomas de la Costa Caribe
-            Nicaragüense (URACCAN)
-          </h3>
-          <p class="info"><span class="subtitle">Fecha:</span> 2017 - 2018</p>
+
+          <h4>Estudios Profesionales</h4>
+
           <p class="info">
-            <span class="subtitle">Descripción:</span> Estudié el primer año de
-            Ingeniería en Sistemas en la URACCAN.
+            <span class="subtitle"></span> Universidad de Las Regiones Autonomas de la costa Caribe Nicaraguense URACCAN, Actualmente Curso Cuarto año de la carrera de Ingeniería en Sistemas 2020-2023
           </p>
         </div>
       </div>
-
-      <div class="section">
-        <h2 class="title">Proyectos Destacados</h2>
-        <div class="project">
-          <h3>Sitio Web Personal</h3>
-          <p class="info"><span class="subtitle">Fecha:</span> 2021</p>
-          <p class="info">
-            <span class="subtitle">Descripción:</span> Diseñé y desarrollé mi
-            propio sitio web personal utilizando HTML, CSS y JavaScript.
-          </p>
-        </div>
         <!-- Puedes agregar más proyectos destacados -->
       </div>
 
       <div class="separator"></div>
     </section>
+
+    <!-- inicio js de Habilidades -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+      integrity="sha512-...tu-código-de-integridad..."
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

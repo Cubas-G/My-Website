@@ -40,6 +40,8 @@ body {
     margin-top: 1px;
   }
 
+ 
+
   .skill i {
     margin-right: 5px;
   }
@@ -74,13 +76,23 @@ body {
   }
 
   .personal-info {
-    font-size: 13px;
-    background-color: rgba(227, 31, 24, 0.147);
-    width: 45%;
+    font-size: 20px;
+    width: 35%;
     margin: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-bottom: 10px;
+  }
+
+   /* Estilos nuevos agrgados> */
+   .icon {
+    font-size: 40px;
+    transition: transform 0.3s, font-size 0.3s;
+  }
+  
+  .icon:hover {
+    font-size: 22px;
+    transform: scale(1.5);
   }
 
   .skill {
@@ -154,3 +166,342 @@ body {
     text-decoration: none;
     margin-right: 10px;
   }
+
+  /* Inicio de estilos de Habilidades */
+
+   /* Estilos para el título */
+   h3 {
+    position: relative;
+    display: inline-block;
+    padding-left: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+  }
+
+  /* Estilos para el Mantenimiento de computadoras */
+  h3.computadoras::before {
+    content: "\f5fc"; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    color: #0e9841;
+  }
+
+  /* Estilos para la animación de color del icono */
+  h3.computadoras:hover::before {
+    color: #5267b4;
+  }
+
+  /* Estilos para la animación de transformación del icono */
+  h3.computadoras:hover::before {
+    transform: translateY(-50%) rotate(360deg);
+  }
+
+  /* Estilos para las listas */
+  .Habilities ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .Habilities li {
+    position: relative;
+    padding-left: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+  }
+
+  .Habilities li::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: #000;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .Habilities li:hover {
+    color: #00ff00;
+  }
+
+  .Habilities li:hover::before {
+    transform: translateY(-50%) rotate(360deg);
+  }
+
+  /* Estilos para los iconos de cada habilidad */
+  .Habilities .activacion-programas::before {
+    content: "\f121"; /* Código del icono de Font Awesome para Activacion de Programas (puedes cambiarlo) */
+  }
+
+  .Habilities .limpieza-virus::before {
+    content: "\e06c"; /* Código del icono de Font Awesome para Limpieza de Virus (puedes cambiarlo) */
+  }
+
+  .Habilities .cambio-componentes::before {
+    content: "\f0e7"; /* Código del icono de Font Awesome para Cambio de Componentes (puedes cambiarlo) */
+  }
+
+  .Habilities .actualizaciones::before {
+    content: "\f021"; /* Código del icono de Font Awesome para Actualizaciones (puedes cambiarlo) */
+  }
+
+
+   /* Inicio de estilos de Office */
+  h3.Office::before {
+    content: "\f674"; /* Código del icono de Font Awesome para Computadoras (puedes cambiarlo) */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    color: #00239f;
+  }
+
+  /* Estilos para la animación de color del icono */
+  h3.computadoras:hover::before {
+    color: #5267b4;
+  }
+
+  /* Estilos para la animación de transformación del icono */
+  h3.computadoras:hover::before {
+    transform: translateY(-50%) rotate(360deg);
+  }
+
+  /* Estilos para las listas */
+  .Habilities ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .Habilities li {
+    position: relative;
+    padding-left: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+  }
+
+  .Habilities li::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: #26ae73a0;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .Habilities li:hover {
+    color: #003cff;
+  }
+
+  .Habilities li:hover::before {
+    transform: translateY(-50%) rotate(360deg);
+  }
+
+  /* Estilos para los iconos de cada habilidad */
+  .Habilities .Documentos::before {
+    content: "\f1c2";
+  }
+
+  .Habilities .Calculos::before {
+    content: "\f1c3"; 
+  }
+
+  .Habilities .Presentaciones::before {
+    content: "\f1c4"; 
+  }
+
+
+
+
+  /* Inicio de estilos para Edicion de medios Digitales */
+  h3.Disain::before {
+    content: "\f044"; /* Código del icono de Font Awesome para Computadoras (puedes cambiarlo) */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    color: #289f00;
+  }
+
+  /* Estilos para la animación de color del icono */
+  h3.computadoras:hover::before {
+    color: #5267b4;
+  }
+
+  /* Estilos para la animación de transformación del icono */
+  h3.computadoras:hover::before {
+    transform: translateY(-50%) rotate(360deg);
+  }
+
+  /* Estilos para las listas */
+  .Habilities ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .Habilities li {
+    position: relative;
+    padding-left: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+  }
+
+  .Habilities li::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: #26ae73a0;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .Habilities li:hover {
+    color: #003cff;
+  }
+
+  .Habilities li:hover::before {
+    transform: translateY(-50%) rotate(360deg);
+  }
+
+  /* Estilos para los iconos de cada habilidad */
+  .Habilities .Edicion-de-fotografia::before {
+    content: "\f87c";
+  }
+
+  .Habilities .Edicion-de-video::before {
+    content: "\f008"; 
+  }
+
+  .Habilities .Di-sain::before {
+    content: "\e190"; 
+  }
+
+  .Habilities .A-nimation::before {
+    content: "\e409"; 
+  }
+
+  .Habilities .app::before {
+    content: "\f37e"; 
+  }
+
+  .Habilities .Edit-Audio::before {
+    content: "\f1c7"; 
+  }
+
+  
+
+  /* Inicio de estilos para Diseño Web */
+  h3.DisainWeb::before {
+    content: "\f121"; /* Código del icono de Font Awesome para Computadoras (puedes cambiarlo) */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    color: #9f0040;
+  }
+
+  /* Estilos para la animación de color del icono */
+  h3.computadoras:hover::before {
+    color: #5267b4;
+  }
+
+  /* Estilos para la animación de transformación del icono */
+  h3.computadoras:hover::before {
+    transform: translateY(-50%) rotate(360deg);
+  }
+
+  /* Estilos para las listas */
+  .Habilities ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .Habilities li {
+    position: relative;
+    padding-left: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+  }
+
+  .Habilities li::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: #26ae73a0;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .Habilities li:hover {
+    color: #003cff;
+  }
+
+  .Habilities li:hover::before {
+    transform: translateY(-50%) rotate(360deg);
+  }
+
+  /* Estilos para los iconos de cada habilidad */
+  .Habilities .htmll::before {
+    content: "\f1c4";
+  }
+
+  .horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .horizontal ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .horizontal li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .horizontal img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  
+
+  
