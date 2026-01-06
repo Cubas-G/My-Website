@@ -1,204 +1,292 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Currículum Vitae</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="path/to/font-awesome.min.css" />
-    <link rel="stylesheet" href="./Estilos/style.css" />
+<html lang="es">
 
-    <!-- Importacion de iconos de de Habilidades -->
-    
-  </head>
-  <body>
-    <div class="div-profile">
-      <img class="profile-img" src="Cubas.jpg" alt="Imagen de perfil" />
-      <div class="titles">
-        <h2 class="title">FREDDY CUBAS</h2>
-        <p class="title_profile">ESTUDIANTE INGENIERÍA DE SISTEMAS</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Freddy Cubas</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===========================
+       CONFIGURACIÓN PARA PDF
+    ============================ */
+    @page {
+      margin: 25mm;
+    }
+
+    @media print {
+      body {
+        background: white !important;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .cv-container {
+        box-shadow: none !important;
+        background: white !important;
+        color: black !important;
+      }
+
+      .profile-img {
+        border-color: #2b2be8 !important;
+      }
+
+      .icons img {
+        filter: none !important;
+      }
+    }
+
+    /* ===========================
+       ESTILO GENERAL
+    ============================ */
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at center, #2b2be8, #080859, #10161b49);
+      color: #fff;
+    }
+
+    .cv-container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.12);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    }
+
+    /* ===========================
+       ENCABEZADO
+    ============================ */
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #4ec9a7;
+      margin-bottom: 15px;
+    }
+
+    .icons {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .icons img {
+      width: 40px;
+      transition: 0.3s ease;
+    }
+
+    .icons img:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 6px #7fe7c4);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #4ec9a7;
+      margin-bottom: 20px;
+    }
+
+    /* ===========================
+       SECCIONES
+    ============================ */
+    h2 {
+      font-size: 22px;
+      margin-top: 40px;
+      border-left: 4px solid #4ec9a7;
+      padding-left: 10px;
+      font-weight: 600;
+    }
+
+    p,
+    li {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+
+    /* ===========================
+       HABILIDADES
+    ============================ */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .skill-box {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 10px 15px;
+      border-radius: 10px;
+    }
+
+    /* ===========================
+       TIMELINE
+    ============================ */
+    .timeline-item {
+      margin-bottom: 15px;
+    }
+
+    /* ===========================
+       FOOTER
+    ============================ */
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cv-container">
+
+    <!-- ENCABEZADO CON FOTO E ICONOS -->
+    <div class="header">
+      <img src="Cubas.jpg" alt="Foto de Freddy Cubas" class="profile-img">
+
+      <h1>FREDDY CUBAS</h1>
+      <p class="subtitle">Desarrollador en Formación | Ingeniería en Sistemas</p>
+
+      <div class="icons">
+        <a href="mailto:fredyscubas00@gmail.com">
+          <img src="G-mail.png" alt="Gmail">
+        </a>
+
+        <a href="https://github.com/" target="_blank">
+          <img src="github.png" alt="GitHub">
+        </a>
       </div>
     </div>
 
-    <section class="Principal">
-      <div class="personal-info">
-        <a href="https://web.whatsapp.com/"><img src="whatsapp.png" alt="WhatsApp"  class="icon" id="img-tamaño"></a>
-        <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"  class="icon" id="img-tamaño"></a>
-        <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"  class="icon" id="img-tamaño"></a>
-        <a href="https://web.telegram.org/"><img src="telegram.png" alt="Telegram" class="icon" id="img-tamaño"></a>
-        <a href="https://github.com/Cubas-G"><img src="github.png" alt="GitHub" class="icon" id="img-tamaño"></a>
-        <a href="https://mail.google.com/mail/u/0/?hl=es#inbox"><img src="G-mail.png" alt="Gmail"  class="icon"  id="img-tamaño"></a>
-      </div>
-       
+    <!-- PERFIL PROFESIONAL -->
+    <div class="section">
+      <h2>Perfil Profesional</h2>
+      <p>
+        Soy un desarrollador en formación con una fuerte pasión por aprender, crear y mejorar cada día. Me especializo
+        en combinar lo técnico con lo creativo, construyendo soluciones limpias, eficientes y visualmente atractivas.
+        Actualmente fortalezco mis habilidades en desarrollo web, Python y Flask, con el objetivo de crear proyectos que
+        reflejen mi crecimiento personal y profesional.
+      </p>
+    </div>
 
+    <!-- HABILIDADES -->
+    <div class="section">
+      <h2>Habilidades</h2>
 
-      <div class="section">
-        <div class="acerca-de">
-          <h2 class="title">ACERCA DE MI</h2>
-          <p class="acreca-mi">
-            Soy un estudiante de Ingeniería en Sistemas con experiencia en
-            tecnologías de programación web y diseño gráfico. Mi pasión por la
-            informática y mi habilidad para resolver problemas me han permitido
-            adquirir conocimientos sólidos en el campo de la tecnología.
-          <div class="separator"></div>
-
-          <p class="acreca-mi">
-            Mi meta profesional es aplicar mis habilidades y conocimientos en nuevos 
-            proyectos que me permitan crecer como persona y así mismo aportar un aporte
-             significativo, colaborando con equipos multidisciplinarios para impulsar soluciones
-            innovadoras y eficientes en el campo de la tecnología.
-          </p>
-        </div>
-        <div class="separator"></div>
-        <h2 class="title">HABILIDADES</h2>
-
-        <div class="Habilities">
-          <h3 class="subtitle computadoras">
-            Mantenimiento y Reparacion de Computadoras:
-          </h3>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <strong>Mantenimiento de Computadoras</strong>
           <ul>
-            <li class="activacion-programas">Activacion de Programas</li>
-            <li class="limpieza-virus">Limpieza de Virus</li>
-            <li class="cambio-componentes">Cambio de Componentes</li>
-            <li class="actualizaciones">Actualizaciones</li>
+            <li>Diagnóstico y reparación</li>
+            <li>Eliminación de malware</li>
+            <li>Instalación de software</li>
+            <li>Optimización del sistema</li>
           </ul>
         </div>
 
-        <div class="Habilities">
-          <div class="separator"></div>
-          <h3 class="Office">Manejo de paquete Offimatico:</h3>
+        <div class="skill-box">
+          <strong>Desarrollo Web</strong>
           <ul>
-            <li class="Documentos">Word</li>
-            <li class="Calculos">Exel</li>
-            <li class="Presentaciones">PowerPoint</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, VueJs</li>
+            <li>Diseño responsivo</li>
           </ul>
         </div>
 
-        <div class="Habilities">
-          <div class="separator"></div>
-          <h3 class="Disain">Edición de medio Digitales:</h3>
+        <div class="skill-box">
+          <strong>Edición Digital</strong>
           <ul>
-            <li class="Edicion-de-fotografia">Adobe Photoshop</li>
-            <li class="Edicion-de-video">Adobe Premiere</li>
-            <li class="Edit-Audio">Adobe Audition</li>
-            <li class="Edicion-de-video">Filmora</li>
-            <li class="Edit-Audio">Audacity</li>
+            <li>Photoshop</li>
+            <li>Premiere</li>
+            <li>Audition</li>
+            <li>Filmora</li>
           </ul>
         </div>
 
-
-
-        <div class="Habilities">
-          <div class="separator"></div>
-          <h3 class="DisainWeb">Desarrollo Web:</h3>
-          <div class="horizontal">
-
-            <div class="icon">
-           
-            </div>
-            <ul>
-              <li>
-                <img src="html-5.png" alt="HTML icon">
-                HTML
-              </li>
-              <li>
-                <img src="css-3.png" alt="CSS icon">
-                CSS
-              </li>
-              <li>
-                <img src="js.png" alt="JavaScript icon">
-                JavaScript
-              </li>
-              <li>
-                <img src="Reac.png" alt="React icon">
-                React
-              </li>
-              <li>
-                <img src="Vuejs.png" alt="ViewJs icon">
-                ViewJs
-              </li>
-            </ul>
-      </div>
-
-
-
-      <div class="section">
-        <div class="separator"></div>
-        <h2 class="title">EXPERIENCIA LABORAL</h2>
-        <div class="experience">
-          <h4>
-            Practicas pre-profesionales Laboratorio de informatica Universidad
-            URACCAN
-          </h4>
-          <p class="info">
-            <span class="subtitle">Fecha:</span> 27 de marzo de 2022, 18 de
-            Noviembre de 2022
-          </p>
-          <p class="info">
-            <span class="subtitle">Descripción:</span> Trabajé como asistente de
-            Soporte Técnico, mantenimiento de computadoras, hardware y software,
-            cambio de sistemas instalcion y eliminacion de programas,
-            eliminacion de virus, activacion de licencias.
-          </p>
-        </div>
-        <!-- Puedes agregar más experiencias laborales -->
-      </div>
-
-      <div class="section">
-        <div class="separator"></div>
-        <h3 class="education">Educación</h3>
-        <div class="education">
-          <h4>Estudios de Primaria</h4>
-
-          <p class="info">
-            <span class="subtitle"></span> Escuela Primaria Miguel LaReynaga 2010-2015
-          </p>
-
-          <h4>Estudios de Secundaria</h4>
-
-          <p class="info">
-            <span class="subtitle"></span> Instituto Salomón Bravo Herrera 2015-2020
-          </p>
-
-          <h4>Estudios Profesionales</h4>
-
-          <p class="info">
-            <span class="subtitle"></span> Universidad de Las Regiones Autonomas de la costa Caribe Nicaraguense URACCAN, Actualmente Curso Cuarto año de la carrera de Ingeniería en Sistemas 2020-2023
-          </p>
+        <div class="skill-box">
+          <strong>Ofimática</strong>
+          <ul>
+            <li>Word</li>
+            <li>Excel</li>
+            <li>PowerPoint</li>
+          </ul>
         </div>
       </div>
-        <!-- Puedes agregar más proyectos destacados -->
+    </div>
+
+    <!-- EDUCACIÓN -->
+    <div class="section">
+      <h2>Educación</h2>
+      <p><strong>Ingeniería en Sistemas</strong> — URACCAN (2020 - Actualidad)</p>
+    </div>
+
+    <!-- CERTIFICACIONES -->
+    <div class="section">
+      <h2>Certificaciones</h2>
+      <ul>
+        <li>Google IT Support — Fundamentos de TI</li>
+        <li>HTML & CSS — Desarrollo Web Básico</li>
+        <li>Cybersecurity Basics — Seguridad Informática</li>
+      </ul>
+    </div>
+
+    <!-- EXPERIENCIA / TIMELINE -->
+    <div class="section">
+      <h2>Experiencia y Progresión</h2>
+
+      <div class="timeline-item">
+        <strong>2020 — Inicio de Ingeniería</strong>
+        <p>Comencé mis estudios en URACCAN, dando mis primeros pasos en el mundo tecnológico.</p>
       </div>
 
-      <div class="separator"></div>
-    </section>
-
-    <footer>
-      <div id="Copyright">
-        <a href="https://www.freepik.es/"><img src="Freepic.svg"></a>
-        <p class="copyright">
-          &copy; 2010-2023 Freepik Company S.L. Todos los derechos reservados.
-        </p>
-        <hr> <!-- Línea que separa los elementos -->
-        <p class="copiright">
-          &copy; 2022-2023 FontAwesome. Los íconos utilizados en este sitio son propiedad de 
-          <a href="https://fontawesome.com/license" target="_blank">FontAwesome</a> y están sujetos a los términos de uso y licencia de FontAwesome.
-        </p>
-        <hr> <!-- Línea que separa los elementos -->
-        <p class="copiright">
-          &copy; 2023 Freddy Cubas. Todos los derechos reservados. Contacto: <a href="mailto:fredyscubas00@gmail.com">fredyscubas00@gmail.com</a>
-        </p>
+      <div class="timeline-item">
+        <strong>2022 — Prácticas Profesionales</strong>
+        <p>Realicé soporte técnico, fortaleciendo mis habilidades prácticas.</p>
       </div>
-    </footer>
-    
-    
 
-    <!-- inicio js de Habilidades -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
-      integrity="sha512-...tu-código-de-integridad..."
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <div class="timeline-item">
+        <strong>2023 — Desarrollo Web</strong>
+        <p>Inicié la creación de proyectos personales y el aprendizaje de tecnologías web modernas.</p>
+      </div>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="section">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:fredyscubas00@gmail.com" style="color:#4ec9a7;">fredyscubas00@gmail.com</a></p>
+    </div>
+
+    <p class="footer">&copy; 2026 Freddy Cubas — CV Profesional</p>
+
+  </div>
+
+</body>
+
 </html>
