@@ -1,209 +1,146 @@
+@page {
+  margin: 25mm;
+}
+
+@media print {
+  body {
+    background: rgb(7, 128, 134) !important;
+  }
+
+  .cv-container {
+    box-shadow: none !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  .profile-img {
+    border-color: #2b2be8 !important;
+  }
+
+  .icons img {
+    filter: none !important;
+  }
+}
+
 /* ===========================
-   ESTILOS GENERALES
-=========================== */
+       ESTILO GENERAL
+    ============================ */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  background: #eef2f7;
-  color: #333;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at center, #2b2be8, #080859, #10161b49);
+  color: #fff;
 }
 
-h1, h2, h3 {
-  margin: 0;
-}
-
-p {
-  line-height: 1.6;
-}
-
-/* Animación general */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.card, .profile-card, .social-section {
-  animation: fadeIn 0.8s ease forwards;
+.cv-container {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 }
 
 /* ===========================
-   HEADER / PERFIL
-=========================== */
+       ENCABEZADO
+    ============================ */
 .header {
-  display: flex;
-  justify-content: center;
-  padding: 40px 0;
-}
-
-.profile-card {
   text-align: center;
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  width: 350px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
 }
 
 .profile-img {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #007bff;
-  transition: transform 0.3s ease;
+  border: 4px solid #4ec9a7;
+  margin-bottom: 15px;
 }
 
-.profile-img:hover {
-  transform: scale(1.05);
-}
-
-.subtitle {
-  color: #555;
-  font-size: 1.1rem;
-}
-
-/* ===========================
-   REDES SOCIALES
-=========================== */
-.social-section {
+.icons {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 25px 0;
 }
 
-.social-section img {
-  width: 45px;
-  height: 45px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+.icons img {
+  width: 40px;
+  transition: 0.3s ease;
 }
 
-.social-section img:hover {
-  transform: scale(1.3);
-  filter: drop-shadow(0 0 5px #007bff);
+.icons img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 6px #7fe7c4);
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #4ec9a7;
+  margin-bottom: 20px;
 }
 
 /* ===========================
-   CONTENEDOR PRINCIPAL
-=========================== */
-.container {
-  width: 85%;
-  margin: auto;
-  padding-bottom: 40px;
+       SECCIONES
+    ============================ */
+h2 {
+  font-size: 22px;
+  margin-top: 40px;
+  border-left: 4px solid #4ec9a7;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+p,
+li {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+ul {
+  margin-top: 10px;
 }
 
 /* ===========================
-   TARJETAS (SECCIONES)
-=========================== */
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  margin-bottom: 35px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+       HABILIDADES
+    ============================ */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.skill-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 
-.card h2 {
-  color: #007bff;
+/* ===========================
+       TIMELINE
+    ============================ */
+.timeline-item {
   margin-bottom: 15px;
 }
 
 /* ===========================
-   HABILIDADES
-=========================== */
-.skill-block {
-  margin-bottom: 25px;
-}
-
-.skill-block h3 {
-  position: relative;
-  padding-left: 60px;
-  margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.skill-block ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.skill-block li {
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 8px;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.skill-block li:hover {
-  color: #007bff;
-}
-
-.skill-block li::before {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #007bff;
-  transition: transform 0.3s ease;
-}
-
-.skill-block li:hover::before {
-  transform: translateY(-50%) rotate(360deg);
-}
-
-/* Iconos personalizados */
-.computadoras::before { content: "\f5fc"; }
-.Office::before { content: "\f674"; }
-.Disain::before { content: "\f044"; }
-.DisainWeb::before { content: "\f121"; }
-
-/* ===========================
-   ICONOS WEB
-=========================== */
-.web-icons {
-  display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-.web-icons li {
-  text-align: center;
-  width: 90px;
-}
-
-.web-icons img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 5px;
-  transition: transform 0.3s ease;
-}
-
-.web-icons img:hover {
-  transform: scale(1.2);
-}
-
-/* ===========================
-   FOOTER
-=========================== */
+       FOOTER
+    ============================ */
 .footer {
-  background: #dfe6ef;
-  padding: 20px;
   text-align: center;
   margin-top: 40px;
-  border-top: 3px solid #007bff;
-}
-
-.footer a {
-  color: #007bff;
-  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
 }
